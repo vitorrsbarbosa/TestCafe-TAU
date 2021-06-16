@@ -4,9 +4,11 @@
   "description": "first testcafe script",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "firstTest": "testcafe chrome tests/FirstTest.js",
+    "secondTest": "testcafe chrome tests/SecondTest.js",
+    "allTests": "testcafe chrome tests/"
   },
-  "author": "Moataz Nabil",
+  "author": "Vitor Barbosa",
   "license": "ISC",
   "dependencies": {
     "testcafe": "^1.8.7"
