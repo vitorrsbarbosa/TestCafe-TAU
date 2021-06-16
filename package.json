@@ -4,9 +4,11 @@
   "description": "first testcafe script",
   "main": "index.js",
   "scripts": {
-    "firstTest": "testcafe chrome tests/FirstTest.js",
-    "secondTest": "testcafe chrome tests/SecondTest.js",
-    "allTests": "testcafe chrome tests/"
+    "firstTest": "testcafe chrome tests/FirstTest.js --skip-js-errors",
+    "secondTest": "testcafe chrome tests/SecondTest.js --skip-js-errors",
+    "allTests": "testcafe chrome tests/ --skip-js-errors",
+    "allTestsHeadlessInChrome": "testcafe chrome:headless tests/ --skip-js-errors",
+    "allTestsHeadlessInFirefox": "testcafe firefox:headless tests/ --skip-js-errors"
   },
   "author": "Vitor Barbosa",
   "license": "ISC",
