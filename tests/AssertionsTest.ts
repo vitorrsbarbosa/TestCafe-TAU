@@ -12,3 +12,13 @@ test('Check property of element', async t => {
 		.typeText(developerNameInput, developerName)
 		.expect(developerNameInput.value).contains(developerName + developerName);
 });
+
+test("Asserting visibility of element", async t => {
+	const developerNameElement = await developerNameInput.with({ visibilityCheck: true })();
+
+	await t
+		.expect(developerNameElement.value).eql('')
+		.typeText(developerNameInput, developerName)
+		.typeText(developerNameInput, developerName)
+		.expect(developerNameInput.value).contains(developerName + developerName);
+});
