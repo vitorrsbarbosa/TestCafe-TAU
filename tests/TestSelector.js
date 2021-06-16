@@ -5,11 +5,11 @@ const osOption = Selector('input#macos')
 const submitButton = Selector('#submit-button')
 const thanksMessage = Selector('#article-header');
 
-fixture("First Fixture with TestCafe")
-    .page("https://devexpress.github.io/testcafe/example/");
-test("First Test with TestCafe", async t => {
-    await t
-        .typeText(developerName,'TAU')
-        .click(osOption)
-        .click(submitButton).expect(thanksMessage.innerText).contains('TAU')
-    });
+fixture('First Fixture with TestCafe')
+	.page('https://devexpress.github.io/testcafe/example/');
+test('First Test with TestCafe', async t => {
+	await t
+		.typeText(developerName, 'TAU')
+		.click(osOption)
+		.click(submitButton).expect(thanksMessage.innerText).contains('TAU')
+});
