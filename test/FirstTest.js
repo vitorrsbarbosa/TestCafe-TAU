@@ -1,4 +1,4 @@
-fixture('First Fixture with TestCafe').meta('fixture','first')
+fixture('Simple Fixture').meta('fixture','first')
 	.page('https://devexpress.github.io/testcafe/example/');
 test('First Test with TestCafe submiting with Linux',  async t => {
 	await t
